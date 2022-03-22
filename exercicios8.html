@@ -1,0 +1,23 @@
+<!DOCTYPEhtml>
+<html>
+  <title> logica programacao </title>
+  <head>
+    <script>
+      var notaA = parseInt(prompt("insira a nota da primeira avalicao:"));
+
+      while (notaA > 10 || notaA < 0) {
+        var notaA = parseInt(prompt("insira a nota da primeira avalicao:"));
+      }
+      
+      var notaB = parseInt(prompt("insira a nota da segunda avalicao:"));
+
+      while (notaB > 10 || notaB < 0) {
+        var notaB = parseInt(prompt("insira a nota da segunda avalicao:"));
+      }
+
+      media = ((notaA + notaB) / 2)
+      document.write(media)
+
+    </script>
+  </head>
+</html>
