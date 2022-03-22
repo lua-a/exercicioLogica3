@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+  <title> logica programacao </title>
+  <head>
+    <script>
+      var notaA = 0
+      var notaB = 0
+      var continuar = "S"
+      var somaA = 0
+      var somaB = 0
+      
+      while (continuar == "S") {
+        notaA = parseInt(prompt("insira a primeira nota:"));
+        notaB = parseInt(prompt("insira a segunda nota:"));
+        media = ((notaA + notaB) / 2)
+        if (media >= 9.5){
+          somaA ++
+        }
+        else {
+          somaB ++
+        }
+        continuar = prompt("Calcular a média de outro aluno Sim/Não?");
+      }
+      document.write("há " + somaA + " alunos aprovados e " + somaB + " alunos reprovados")
+    </script>
+  </head>
+</html>
